@@ -79,13 +79,13 @@ public class Node {
 			rightChild.printPreOrder();
 	}
 	
-	public void  postOrder() {
+	public void  printPostOrder() {
 		
 		if(this.leftChild != null)
-			leftChild.postOrder();
+			leftChild.printPostOrder();
 		
 		if(this.rightChild != null)
-			rightChild.postOrder();
+			rightChild.printPostOrder();
 
 		System.out.println(this.data);
 		
